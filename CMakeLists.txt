@@ -19,9 +19,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 # SOFTWARE.
 #==============================================================================
+# CMakeLists for easyloggingpp
 cmake_minimum_required(VERSION 3.3)
 
-project(Easyloggingpp CXX)
+project(ELPP CXX)
 
 set(ELPP_MAJOR_VERSION "9")
 set(ELPP_MINOR_VERSION "80")
@@ -34,5 +35,3 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 install(FILES src/easylogging++.h
     DESTINATION "${ELPP_INCLUDE_INSTALL_DIR}"
     COMPONENT dev)
-
-export(PACKAGE ${PROJECT_NAME})
